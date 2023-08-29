@@ -50,6 +50,29 @@
 //   }
 // });
 
+// select all the elements with the class "slide-in-right"
+const slideInRightElements = document.querySelectorAll(".slide-in-right");
+
+// create a new intersection observer
+const slideInRightObserver = new IntersectionObserver(function(entries, slideInRightObserver) {
+  // loop through the entries
+  entries.forEach(entry => {
+    // check if the entry is intersecting
+    if (entry.isIntersecting) {
+      // add the class "active" to the entry target
+      entry.target.classList.remove("inactive");
+    } else {
+      // if the element is not intersecting (out of view), add the "inactive" class
+      entry.target.classList.add("inactive");
+    }
+  });
+});
+
+// loop through the slide in right elements and observe each element
+slideInRightElements.forEach(element => {
+  slideInRightObserver.observe(element);
+});
+
 
 (function($) {
 

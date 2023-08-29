@@ -39,7 +39,21 @@
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
-
+/* define the styles for the slide in right elements */
+.slide-in-right {
+	/* set the initial position to be on-screen */
+	transform: translateX(0);
+	/* set the transition duration and easing */
+	transition: all 0.9s ease-out;
+  }
+  
+  /* define the styles for the inactive class */
+  .inactive {
+	/* set the final position to be off-screen to the right */
+	transform: translateX(100%);
+  }
+  
+  
 /** 
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
