@@ -71,7 +71,7 @@
 
 		<div class="intro-overlay"></div>
 
-		<div class="intro-content">
+		<div class="intro-content" data-aos="slide-up">
 			<div class="row">
 
 				<div class="col-twelve">
@@ -104,7 +104,7 @@
    ================================================== -->
 	<section id="about">
 
-		<div class="row section-intro" data-aos="fade-left">
+		<div class="row section-intro" data-aos="slide-up">
 			<div class="col-twelve">
 
 				<h5>About</h5>
@@ -123,7 +123,7 @@
 			</div>
 		</div> <!-- /section-intro -->
 
-		<div class="row about-content left-slide">
+		<div class="row about-content" data-aos="slide-up">
 
 			<div class="col-six tab-full">
 
@@ -184,7 +184,7 @@
 
 		</div>
 
-		<div class="row button-section" data-aos="fade-right">
+		<div class="row button-section" data-aos="slide-up">
 			<div class="col-twelve">
 				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
 				<a href="Mohammed Ziyan Resume.pdf" title="Download CV" class="button button-primary" download>Download
@@ -199,7 +199,7 @@
    ================================================== -->
 	<section id="resume" class="grey-section">
 
-		<div class="row section-intro" data-aos="fade-right">
+		<div class="row section-intro" data-aos="slide-up">
 			<div class="col-twelve">
 
 				<h5>Resume</h5>
@@ -207,7 +207,7 @@
 			</div>
 		</div> <!-- /section-intro-->
 
-		<div class="row resume-timeline" data-aos="fade-right">
+		<div class="row resume-timeline" data-aos="slide-up">
 
 			<div class="col-twelve resume-header">
 
@@ -265,13 +265,13 @@
 
 		<div class="row resume-timeline">
 
-			<div class="col-twelve resume-header" data-aos="fade-left">
+			<div class="col-twelve resume-header" data-aos="slide-up">
 
 				<h1>Education</h1>
 
 			</div> <!-- /resume-header -->
 
-			<div class="col-twelve" data-aos="fade-left">
+			<div class="col-twelve" data-aos="slide-up">
 
 				<div class="timeline-wrap">
 
@@ -370,7 +370,7 @@
 	<section id="portfolio">
 
 		<div class="row section-intro">
-			<div class="col-twelve" data-aos="fade-right">
+			<div class="col-twelve" data-aos="slide-up">
 
 				<h5>Portfolio</h5>
 				<h1>Check Out Some of My Works.</h1>
@@ -664,15 +664,19 @@
 	<!-- stats Section
    ================================================== -->
 	<section id="stats" class="count-up">
-		<h1 style="color: white;">GitHub Stats</h1>
+		<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+			<h1 style="color: white;">GitHub Stats</h1>
 
-		<p>
-			<img src="https://github-readme-streak-stats.herokuapp.com/?user=ziyanoffl&theme=dracula" alt="ziyanoffl" />
-			<img src="https://github-readme-stats.vercel.app/api/top-langs?username=ziyanoffl&theme=dracula&show_icons=true&locale=en&layout=compact"
-				alt="ziyanoffl" />
-			<img src="https://github-readme-stats.vercel.app/api?username=ziyanoffl&theme=dracula&show_icons=true&locale=en"
-				alt="ziyanoffl" />
-		</p>
+			<p>
+				<img src="https://github-readme-streak-stats.herokuapp.com/?user=ziyanoffl&theme=dracula"
+					alt="ziyanoffl" />
+				<img src="https://github-readme-stats.vercel.app/api/top-langs?username=ziyanoffl&theme=dracula&show_icons=true&locale=en&layout=compact"
+					alt="ziyanoffl" />
+				<img src="https://github-readme-stats.vercel.app/api?username=ziyanoffl&theme=dracula&show_icons=true&locale=en"
+					alt="ziyanoffl" />
+			</p>
+		</div>
+
 
 	</section> <!-- /stats -->
 
@@ -681,7 +685,7 @@
    ================================================== -->
 	<section id="contact">
 
-		<div class="row section-intro">
+		<div class="row section-intro" data-aos="slide-up">
 			<div class="col-twelve">
 
 				<h5>Contact</h5>
@@ -692,7 +696,7 @@
 
 		<div class="row contact-info">
 
-			<div class="col-four tab-full">
+			<div class="col-four tab-full" data-aos="slide-up">
 
 				<div class="icon">
 					<i class="icon-pin"></i>
@@ -708,7 +712,7 @@
 
 			</div>
 
-			<div class="col-four tab-full collapse">
+			<div class="col-four tab-full collapse" data-aos="slide-up">
 
 				<div class="icon">
 					<i class="icon-mail"></i>
@@ -721,7 +725,7 @@
 
 			</div>
 
-			<div class="col-four tab-full">
+			<div class="col-four tab-full" data-aos="slide-up">
 
 				<div class="icon">
 					<i class="icon-phone"></i>
@@ -745,7 +749,7 @@
 	<footer>
 		<div class="row">
 
-			<div class="col-six tab-full pull-right social">
+			<div class="col-six tab-full pull-right social" data-aos="slide-up">
 
 				<ul class="footer-social">
 					<li><a href="https://www.linkedin.com/in/mohammed-ziyan"><i class="fa fa-linkedin"></i></a></li>
@@ -780,9 +784,10 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init({
-			duration: 1500,
+			duration: 1200,
 			mirror: true,
-		  });
+			once: false,
+		});
 	</script>
 
 </body>
