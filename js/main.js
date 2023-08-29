@@ -5,6 +5,52 @@
  * ------------------------------------------------------------------- 
  */ 
 
+// Custom
+// // Get the div element by its class name
+// var div = document.getElementsByClassName("right-slide")[0];
+
+// // Set the initial position of the div to be off-screen to the right
+// div.style.right = "-100%";
+
+// // Add an event listener to the window object for scroll events
+// window.addEventListener("scroll", function() {
+//   // Get the current scroll position of the window
+//   var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+//   // Set a threshold value for triggering the animation
+//   var threshold = 100;
+
+//   // Check if the scroll position is greater than or equal to the threshold
+//   if (scrollPos >= threshold) {
+//     // Animate the div to slide in from the right side
+//     div.style.transition = "right 1s ease-in-out";
+//     div.style.right = "0%";
+//   }
+// });
+
+// // Get the div element by its class name
+// var div_left = document.getElementsByClassName("left-slide")[0];
+
+// // Set the initial position of the div to be off-screen to the right
+// div_left.style.left = "-100%";
+
+// // Add an event listener to the window object for scroll events
+// window.addEventListener("scroll", function() {
+//   // Get the current scroll position of the window
+//   var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+//   // Set a threshold value for triggering the animation
+//   var threshold = 100;
+
+//   // Check if the scroll position is greater than or equal to the threshold
+//   if (scrollPos >= threshold) {
+//     // Animate the div to slide in from the right side
+//     div_left.style.transition = "left 1s ease-in-out";
+//     div_left.style.left = "0%";
+//   }
+// });
+
+
 (function($) {
 
 	"use strict";
