@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/vendor.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -50,7 +50,7 @@
 				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
 				<div class="logo">
-					<a href="index.html">MENU</a>
+					<a href="">MENU</a>
 				</div>
 
 				<nav id="main-nav-wrap">
@@ -73,7 +73,7 @@
 
 		<div class="intro-overlay"></div>
 
-		<div class="intro-content" data-aos="slide-up">
+		<div class="intro-content" data-aos="slide-up" data-aos-delay="50" data-aos-duration="3000">
 			<div class="row">
 
 				<div class="col-twelve">
@@ -666,15 +666,15 @@
 	<!-- stats Section
    ================================================== -->
 	<section id="stats" class="count-up">
-		<div data-aos="zoom-out-up">
-			<h1 style="color: white;">GitHub Stats</h1>
+		<div>
+			<h1 style="color: white;" data-aos="zoom-out-up">GitHub Stats</h1>
 
 			<p>
-				<img src="https://github-readme-streak-stats.herokuapp.com/?user=ziyanoffl&theme=dracula"
+				<img data-aos="zoom-out-up" src="https://github-readme-streak-stats.herokuapp.com/?user=ziyanoffl&theme=dracula"
 					alt="ziyanoffl" />
-				<img src="https://github-readme-stats-ziyanoffl.vercel.app/api/top-langs?username=ziyanoffl&theme=dracula&show_icons=true&locale=en&layout=compact"
+				<img data-aos="zoom-out-up" src="https://github-readme-stats-ziyanoffl.vercel.app/api/top-langs?username=ziyanoffl&theme=dracula&show_icons=true&locale=en&layout=compact"
 					alt="ziyanoffl" />
-				<img src="https://github-readme-stats-ziyanoffl.vercel.app/api?username=ziyanoffl&theme=dracula&show_icons=true&locale=en"
+				<img data-aos="zoom-out-up" src="https://github-readme-stats-ziyanoffl.vercel.app/api?username=ziyanoffl&theme=dracula&show_icons=true&locale=en"
 					alt="ziyanoffl" />
 			</p>
 		</div>
@@ -783,16 +783,12 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
 			duration: 1200,
 			mirror: true,
 			once: false,
-			disable: function () {
-				var maxWidth = 800;
-				return window.innerWidth < maxWidth;
-			},
 		});
 	</script>
 	<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>

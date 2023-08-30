@@ -1111,8 +1111,8 @@ header .top-bar {
 	display: block;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
-	min-width: 220px;
-	min-height: 66px;
+	min-width: 180px;
+	min-height: 40px;
 	position: absolute;
 	left: 90px;
 	top: 0;
@@ -1120,8 +1120,8 @@ header .top-bar {
 header .logo {
 	float: left;
 	margin-left: 20px;
-	margin-right: 50px;
-	margin-top: 25px;
+	margin-right: 0px;
+	margin-top: 12px;
 	position: relative;
 }
 header .logo a {
@@ -1133,7 +1133,7 @@ header .logo a {
 	text-shadow: none;
 	color: transparent;
 	width: 92px;
-	height: 15px;
+	height: 20px;
 	background: url("../images/logo.png") no-repeat center;
 	background-size: 92px 35px;
 }
@@ -1147,7 +1147,7 @@ header .logo a {
 	width: 40px;
 	height: 40px;
 	margin-left: 20px;
-	margin-top: 13px;
+	margin-top: 0px;
 	display: block;
 	position: relative;
 }
