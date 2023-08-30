@@ -762,7 +762,7 @@
 
 			<div class="col-six tab-full pull-right social">
 
-				<ul class="footer-social">
+				<ul class="footer-social" data-aos="slide-up">
 					<li><a href="https://www.linkedin.com/in/mohammed-ziyan"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="https://github.com/ziyanoffl"><i class="fa fa-github"></i></a></li>
 					<li><a href="https://web.facebook.com/ziyan.rilwan/"><i class="fa fa-facebook"></i></a></li>
@@ -771,7 +771,7 @@
 			</div>
 
 			<div class="col-six tab-full">
-				<div class="copyright">
+				<div class="copyright" data-aos="slide-up">
 					<span>© Mohammed Ziyan 2023</span>
 				</div>
 			</div>
@@ -809,21 +809,21 @@
 
 		//reload lenis animations
 		$(document).ready(function () {
-			lenis.start();
-		})
+			const lenis = new Lenis()
 
-		const lenis = new Lenis()
+			lenis.on('scroll', (e) => {
+				console.log(e)
+			})
 
-		lenis.on('scroll', (e) => {
-			console.log(e)
-		})
+			function raf(time) {
+				lenis.raf(time)
+				requestAnimationFrame(raf)
+			}
 
-		function raf(time) {
-			lenis.raf(time)
 			requestAnimationFrame(raf)
-		}
+		})
 
-		requestAnimationFrame(raf)
+
 	</script>
 
 </body>
